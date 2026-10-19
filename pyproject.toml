@@ -1,0 +1,24 @@
+[project]
+name = "sutd-itp-1d"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "hrtowii", email = "68852354+hrtowii@users.noreply.github.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "altair>=6.3.0",
+    "numpy>=2.5.4",
+    "openai>=3.35.1",
+    "pandas>=3.0.6",
+    "python-dotenv>=1.2.4",
+    "streamlit>=1.66.0",
+]
+
+[project.scripts]
+sutd-itp-1d = "sutd_itp_1d:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
